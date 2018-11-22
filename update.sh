@@ -12,6 +12,7 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
     git pull
+    aglio -i /usr/src/apiblueprint/docs/api.md -o /var/www/api.ggbvv.com/index.html
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
 else
