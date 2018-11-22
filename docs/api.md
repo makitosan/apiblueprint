@@ -1,7 +1,6 @@
 FORMAT: 1A
  
 # Group ユーザ
- 
 ## ユーザのエンドポイント [/api/v1/users]
  
 ### ユーザ登録 [POST]
