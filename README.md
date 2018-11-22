@@ -1,4 +1,4 @@
 # apiblueprint
 API Blueprint examplie
 
-hello
+hello, world
