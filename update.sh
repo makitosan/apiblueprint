@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Move to current dire
+cd "$(dirname "$0")"
+
+# get the remote status
 git remote update
 
 UPSTREAM=${1:-'@{u}'}
