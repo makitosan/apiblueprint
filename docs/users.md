@@ -26,16 +26,13 @@ FORMAT: 1A
 
 ## ユーザのエンドポイント [/api/v1/users/{id}]
 ### ユーザ取得 [GET]
-
-+ Parameters
-
-    + id: 1 (number) - ユーザID
-
 #### 処理概要
 
 * 該当 id のユーザ情報を返す。
 
-### Retrieve a Message [GET]
++ Parameters
+
+    + id: 1 (number) - ユーザID
 
 + Request JSON Message
 
