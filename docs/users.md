@@ -34,3 +34,24 @@ FORMAT: 1A
 #### 処理概要
 
 * 該当 id のユーザ情報を返す。
+
+### Retrieve a Message [GET]
+
++ Request JSON Message
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Headers
+
+            X-My-Message-Header: 42
+
+    + Body
+
+            {
+              "id": 1,
+              "message": "Hello World!"
+            }

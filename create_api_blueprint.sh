@@ -38,5 +38,4 @@ if [ ${WARNING_ROWS} -ne 0 ]; then
   grep -e "WARNING" ./logs/$LOG_FILE
 fi
 
-echo "[`date \"+%Y-%m-%d %H:%M:%S\"`] finished" | tee -a logs/$LOG_FILE
-echo "API blueprint file created ${DOC_HTML_FILE}" | tee -a logs/$LOG_FILE
+echo "[`date \"+%Y-%m-%d %H:%M:%S\"`] finished ${DOC_HTML_FILE}" | tee -a logs/$LOG_FILE
