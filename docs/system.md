@@ -29,7 +29,7 @@ FORMAT: 1A
         + updateRequired: true (boolean, required) - アップデートが必要かどうか
 
 ## システムステータスエンドポイント [/api/v1/system/status]
-### システムバージョンチェック [GET]
+### システムステータス [GET]
 #### 処理概要
 
 * サーバーのステータスを返す。
