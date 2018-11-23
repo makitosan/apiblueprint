@@ -23,7 +23,7 @@ echo 'FORMAT: 1A' > $DOC_APIB_FILE || exit $?
 echo '' >> $DOC_APIB_FILE
 cat ./docs/*md | sed -e '/^FORMAT: 1A/d' >> $DOC_APIB_FILE || exit $?
 
-aglio -i $DOC_APIB_FILE -o $DOC_HTML_FILE >> logs/$LOG_FILE
+aglio -i $DOC_APIB_FILE -o $DOC_HTML_FILE &>> logs/$LOG_FILE
 
 ERROR_ROWS=`grep -e "ERROR" logs/$LOG_FILE | wc -l`
 WARNING_ROWS=`grep -e "WARNING" logs/$LOG_FILE | wc -l`
