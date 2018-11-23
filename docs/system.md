@@ -33,6 +33,7 @@ FORMAT: 1A
 #### 処理概要
 
 * サーバーのステータスを返す。
+* サーバーのAPIの情報（バージョン等）を返す。
 
 + Request (application/json)
 
