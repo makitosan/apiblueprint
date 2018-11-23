@@ -32,23 +32,26 @@ FORMAT: 1A
 
 + Parameters
 
-    + id: 1 (number) - ユーザID
+    + id: `1` (number, required) - ユーザID
 
-+ Request JSON Message
++ Request User data
 
     + Headers
 
             Accept: application/json
+            X-Some-API-Token: your_API_token
 
 + Response 200 (application/json)
 
     + Headers
 
-            X-My-Message-Header: 42
+            X-Performance-Msec: 52
 
     + Body
 
             {
               "id": 1,
-              "message": "Hello World!"
+              "email": "user@example.com",
+              "firstName": "Takeshi",
+              "lastName": "Suzuki"
             }
