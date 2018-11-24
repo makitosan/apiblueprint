@@ -13,6 +13,8 @@ FORMAT: 1A
     + Headers
 
             Accept: application/json
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
 
     + Attributes
 
@@ -40,6 +42,8 @@ FORMAT: 1A
     + Headers
 
             Accept: application/json
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
 
 + Response 200 (application/json)
 

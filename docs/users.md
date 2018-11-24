@@ -13,6 +13,8 @@ FORMAT: 1A
     + Headers
 
             Accept: application/json
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
 
     + Attributes
         + email: test@example.com (string, required) - メールアドレス（format: email）
@@ -39,7 +41,9 @@ FORMAT: 1A
     + Headers
 
             Accept: application/json
-            X-Some-API-Token: your_API_token
+            X-App-API-Token: YOUR_API_TOKEN
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
 
 + Response 200 (application/json)
 
