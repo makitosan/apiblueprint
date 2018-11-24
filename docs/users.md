@@ -27,14 +27,16 @@ FORMAT: 1A
 
 
 ## ユーザのエンドポイント [/api/v1/users/{id}]
-### ユーザ取得 [GET]
-#### 処理概要
-
-* 該当 id のユーザ情報を返す。
 
 + Parameters
 
-    + id: `1` (number, required) - ユーザID
+    + id: `1` (number, required) - ユーザーID
+
+### ユーザ取得 [GET]
+
+#### 処理概要
+
+* 該当 id のユーザー情報を返す。
 
 + Request User data
 
@@ -59,3 +61,26 @@ FORMAT: 1A
               "firstName": "Takeshi",
               "lastName": "Suzuki"
             }
+
+### ユーザ更新 [PUT]
+
+#### 処理概要
+
+* 該当 id のユーザー情報を更新する。
+
++ Request User data (application/json)
+
+    + Headers
+
+            Accept: application/json
+            X-App-API-Token: YOUR_API_TOKEN
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
+
+    + Attributes
+        + id: `1` (number, required) - ユーザーID
+        + email: `user@example.com` (string) - メールアドレス
+        + firstName: `Takeshi` (string) - 名
+        + lastName: `Suzuki` (string) - 姓
+
++ Response 204
