@@ -1,11 +1,11 @@
 FORMAT: 1A
 
-# Group ユーザ
-## ユーザのエンドポイント [/api/v1/users]
-### ユーザ登録 [POST]
+# Group ユーザー
+## ユーザーのエンドポイント [/api/v1/users]
+### ユーザー登録 [POST]
 #### 処理概要
 
-* ユーザ情報を新しく登録する。
+* ユーザー情報を新しく登録する。
 * 登録に成功した場合、アクセストークンを返す。
 
 + Request (application/json)
@@ -32,7 +32,7 @@ FORMAT: 1A
 
     + id: `1` (number, required) - ユーザーID
 
-### ユーザ取得 [GET]
+### ユーザー取得 [GET]
 
 #### 処理概要
 
@@ -62,11 +62,12 @@ FORMAT: 1A
               "lastName": "Suzuki"
             }
 
-### ユーザ更新 [PUT]
+### ユーザー更新 [PUT]
 
 #### 処理概要
 
 * 該当 id のユーザー情報を更新する。
+* 退会等の処理をする場合には `ユーザー削除` を使用します。
 
 + Request User data (application/json)
 
@@ -82,5 +83,26 @@ FORMAT: 1A
         + email: `user@example.com` (string) - メールアドレス
         + firstName: `Takeshi` (string) - 名
         + lastName: `Suzuki` (string) - 姓
+
++ Response 204
+
+### ユーザー削除 [DELETE]
+
+#### 処理概要
+
+* 該当 id のユーザー情報を削除する。
+* ユーザーの退会処理等に使用する。
+
++ Request User data (application/json)
+
+    + Headers
+
+            Accept: application/json
+            X-App-API-Token: YOUR_API_TOKEN
+            X-App-API-Access-Key: YOUR_API_ACCESS_KEY
+            X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
+
+    + Attributes
+        + id: `1` (number, required) - ユーザーID
 
 + Response 204
