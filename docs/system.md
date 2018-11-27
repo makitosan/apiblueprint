@@ -18,7 +18,7 @@ FORMAT: 1A
 
     + Attributes
 
-        + version: `12.03` (string, required) - メールアドレス（format: email）
+        + version: `12.03` (string, required) - アプリケーションのバージョン番号
         + device: `ios` (enum[string], required) - デバイス種別
             + Members
                 + `ios`

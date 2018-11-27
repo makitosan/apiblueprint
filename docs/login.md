@@ -46,7 +46,7 @@ FORMAT: 1A
             X-App-API-Access-Secret: YOUR_API_ACCESS_SECRET
 
     + Attributes
-        + uid: `ABCDEF0123456789` (string, required) - 端末等を一意に識別する文字列
+        + mdid: `ABCDEF0123456789` (string, required) - 端末等を一意に識別する文字列
 
 + Response 201 (application/json)
 
